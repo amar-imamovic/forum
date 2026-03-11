@@ -72,4 +72,19 @@ class User extends Authenticatable
     {
         return $this->hasMany(Like::class);
     }
+
+
+    /*
+        HELPER METHODS
+    */
+
+    public function isAdmin()
+    {
+        return $this->role->name === 'Admin';
+    }
+
+    public function isModerator()
+    {
+        return $this->role->name === 'Moderator';
+    }
 }
