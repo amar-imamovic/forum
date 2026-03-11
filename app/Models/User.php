@@ -50,7 +50,7 @@ class User extends Authenticatable
 
 
     /*
-        Relationships
+        RELATIONSHIPS
     */
 
     public function role()
